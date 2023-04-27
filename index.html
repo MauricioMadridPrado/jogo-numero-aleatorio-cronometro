@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Adivinha numero - cronômetro</title>
+  </head>
+  <body>
+    
+    <audio data-audio="1"  src="./audios/Field Crawl.mp3"></audio>
+    <audio data-audio="2"  src=  "./audios/That Dog Won'T Hunt.mp3"></audio>
+    <audio data-audio="3" src='./audios/Bananechanic.mp3'></audio>
+
+    <section class="perdeu" data-mensagem="perdeu">
+        <h1> VOCÊ PERDEU!!</h2>
+        <button data-btn="resetar" class="btn resetar">Resetar</button>
+    </section>
+    <section data-mensagem="acertou" class="acertou">
+        <h1>ACERTOU! PARABÉNS!</h1>
+        <button data-btn="resetar" class="btn resetar">Resetar</button>
+    </section>
+    <span class="mensagem__errado" data-mensagem="errado"></span>
+    <section data-jogo="container" class="jogo__cronometro">
+      <div class="cronometro__botoes">
+        <button data-btn="iniciar" class="btn iniciar">Iniciar</button>
+        <button disabled data-btn="pausar" class="btn pausar">Pausar</button>
+      </div>
+      <div>
+        <span class="cronometro__tempo" data-tempo class="tempo">0</span>
+      </div>
+    </section>
+    <footer>
+        <p>Music by Slip.stream - "Field Crawl" - <a href="https://slip.stream/tracks/4db00fd5-2cb6-480c-9db2-48fe0221684c">https://slip.stream/tracks/4db00fd5-2cb6-480c-9db2-48fe0221684c</a></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

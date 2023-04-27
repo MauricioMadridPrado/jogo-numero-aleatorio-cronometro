@@ -1,0 +1,73 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jogo__cronometro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  box-shadow: 0 0 0.5em 0.3em black;
+  padding: 3em 5em;
+}
+.cronometro__botoes {
+  display: flex;
+  gap: 4em;
+}
+.btn {
+  padding: 0.5em 1em;
+  font-size: 3rem;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 0 0 0.1em black;
+  cursor: pointer;
+}
+.iniciar {
+
+  background: rgba(0, 255, 0, 0.4);
+}
+.pausar {
+  background: rgba(255, 0, 0, 0.4);
+}
+
+.resetar {
+    background: rgba(125, 125, 0, 0.4);
+  }
+.cronometro__tempo {
+  font-size: 10rem;
+}
+.mensagem__errado{
+    position: absolute;
+    top: 0px;
+    font-size: 3em;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+.acertou, .perdeu{
+    padding: 3em 4em;
+    box-shadow: 0 0 0.3em black;
+    font-size: 2em;
+    display: none;
+    text-align: center;
+}
+.ativo{
+    display: block;
+    position: absolute;
+
+}
+.desativo{
+    display: none;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+footer p{
+  font-size: 1.5rem;
+}
